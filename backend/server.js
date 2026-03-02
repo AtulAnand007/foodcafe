@@ -109,8 +109,8 @@ const port = process.env.PORT || 4000;
 const allowedOrigins = [
     'http://localhost:5173', // Origin 1
     'http://localhost:5174',  // Origin 2
-    ''                     ,   // production origin 
-    ''                          // production admin origin
+    'https://foodcafe-admin.onrender.com'                     ,   // production origin 
+    'https://foodcafe-frontend.onrender.com'                          // production admin origin
 ];
 
 const corsOptions = {
