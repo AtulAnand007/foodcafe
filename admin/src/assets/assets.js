@@ -17,4 +17,4 @@ export const assets ={
 
 //export const url = 'https://tomato-food-del-backend-p1ni.onrender.com'
 
-export const url='http://localhost:4001'
+export const url='https://foodcafe-del-backend.onrender.com'
