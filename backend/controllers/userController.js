@@ -6,9 +6,17 @@ import pkg from 'firebase-admin';
 const {auth}=pkg;
 import admin from 'firebase-admin'
 
+// admin.initializeApp({
+//     credential: admin.credential.cert("C:\\Users\\ATUL\\Desktop\\tomato_food_delivery_app\\backend\\foodweb.json")
+//   });
+
+const serviceAccount = JSON.parse(
+  process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON,
+);
+
 admin.initializeApp({
-    credential: admin.credential.cert("C:\\Users\\ATUL\\Desktop\\tomato_food_delivery_app\\backend\\foodweb.json")
-  });
+  credential: admin.credential.cert(serviceAccount),
+});
   
 
   //console.log(process.env.GOOGLE_APPLICATION_CREDENTIALS);
